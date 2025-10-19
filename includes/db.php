@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "mysql.railway.internal";
 $username = "root";
-$password = "";
-$dbname = "event_pass_system";
+$password = "EpnwUfuIqJIamdLjTOGroEaoyXfpIHtN";
+$dbname = "railway";
 
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
@@ -13,7 +13,7 @@ if ($mysqli->connect_error) {
 }
 
 
-$conn = mysqli_connect('localhost','root','','event_pass_system'); // change as needed
+$conn = mysqli_connect('mysql.railway.internal','root','EpnwUfuIqJIamdLjTOGroEaoyXfpIHtN','railway'); // change as needed
 if (!$conn) { die('DB connection failed: '.mysqli_connect_error()); }
 
 ?>
